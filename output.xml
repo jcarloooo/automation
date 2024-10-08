@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-10-06T23:06:28.535504" rpa="false" schemaversion="5">
+<suite id="s1" name="Testing" source="c:\Users\carlo\Documents\automation\testing.robot">
+<test id="s1-t1" name="Regression Login to checkout all items" line="46">
+<kw name="Begin web test" owner="browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-06T23:06:28.879066" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/v1/'.</msg>
+<arg>${webPage}</arg>
+<arg>${driverChrome}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-06T23:06:28.878068" elapsed="2.283176"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:28.877067" elapsed="2.285177"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-06T23:06:31.163244" elapsed="0.037004"/>
+</kw>
+<kw name="validate user is in login page" owner="swaglabs_login_page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${useraanameTxt}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-10-06T23:06:31.203250" elapsed="0.033999"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:31.201245" elapsed="0.036004"/>
+</kw>
+<kw name="validate username text field is present" owner="swaglabs_login_page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${useraanameTxt}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-10-06T23:06:31.239249" elapsed="0.023002"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:31.238249" elapsed="0.024002"/>
+</kw>
+<kw name="validate password field is present" owner="swaglabs_login_page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${passwordTxt}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-10-06T23:06:31.263253" elapsed="0.026000"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:31.263253" elapsed="0.026000"/>
+</kw>
+<kw name="enter username" owner="swaglabs_login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-06T23:06:31.292254" level="INFO">Typing text 'standard_user' into text field '//input[@id="user-name"]'.</msg>
+<arg>${useraanameTxt}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T23:06:31.291257" elapsed="0.176991"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:31.290251" elapsed="0.177997"/>
+</kw>
+<kw name="sleeptimer" owner="sleeptimer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-06T23:06:31.470248" level="INFO">Slept 0 seconds.</msg>
+<arg>0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-06T23:06:31.469247" elapsed="0.001001"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:31.469247" elapsed="0.001001"/>
+</kw>
+<kw name="enter password" owner="swaglabs_login_page">
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-10-06T23:06:31.473254" level="INFO">Typing password into text field '//input[@id="password"]'.</msg>
+<msg time="2024-10-06T23:06:31.516627" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${passwordTxt}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T23:06:31.471248" elapsed="0.114396"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:31.471248" elapsed="0.114396"/>
+</kw>
+<kw name="sleeptimer" owner="sleeptimer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-06T23:06:31.587643" level="INFO">Slept 0 seconds.</msg>
+<arg>0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-06T23:06:31.587643" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:31.586643" elapsed="0.001999"/>
+</kw>
+<kw name="click login button" owner="swaglabs_login_page">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-06T23:06:31.589643" level="INFO">Clicking button '//input[@id="login-button"]'.</msg>
+<arg>${loginBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T23:06:31.589643" elapsed="0.434010"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:31.588642" elapsed="0.435011"/>
+</kw>
+<kw name="sleeptimer" owner="sleeptimer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-06T23:06:32.026654" level="INFO">Slept 0 seconds.</msg>
+<arg>0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-06T23:06:32.025655" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:32.024654" elapsed="0.002000"/>
+</kw>
+<kw name="validate user is in homepage" owner="swaglabs_home_page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${productLbl}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-10-06T23:06:32.027654" elapsed="0.028004"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:32.027654" elapsed="0.028004"/>
+</kw>
+<kw name="select all item and add to cart" owner="swaglabs_home_page">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-06T23:06:32.063658" level="INFO">Clicking button '(//div//button[@class='btn_primary btn_inventory'])[1]'.</msg>
+<arg>(${productAddToCart})[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T23:06:32.060658" elapsed="0.189416"/>
+</kw>
+<kw name="sleeptimer" owner="sleeptimer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-06T23:06:32.250931" level="INFO">Slept 0 seconds.</msg>
+<arg>0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-06T23:06:32.250931" elapsed="0.001001"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:32.250931" elapsed="0.001001"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-06T23:06:32.251932" level="INFO">Clicking button '(//div//button[@class='btn_primary btn_inventory'])[1]'.</msg>
+<arg>(${productAddToCart})[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T23:06:32.251932" elapsed="0.071920"/>
+</kw>
+<kw name="sleeptimer" owner="sleeptimer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-06T23:06:32.325854" level="INFO">Slept 0 seconds.</msg>
+<arg>0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-06T23:06:32.324852" elapsed="0.001002"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:32.324852" elapsed="0.001002"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-06T23:06:32.327850" level="INFO">Clicking button '(//div//button[@class='btn_primary btn_inventory'])[1]'.</msg>
+<arg>(${productAddToCart})[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T23:06:32.326852" elapsed="0.072096"/>
+</kw>
+<kw name="sleeptimer" owner="sleeptimer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-06T23:06:32.399949" level="INFO">Slept 0 seconds.</msg>
+<arg>0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-06T23:06:32.399949" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:32.398948" elapsed="0.001001"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-06T23:06:32.400947" level="INFO">Clicking button '(//div//button[@class='btn_primary btn_inventory'])[1]'.</msg>
+<arg>(${productAddToCart})[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T23:06:32.399949" elapsed="0.065009"/>
+</kw>
+<kw name="sleeptimer" owner="sleeptimer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-06T23:06:32.466953" level="INFO">Slept 0 seconds.</msg>
+<arg>0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-06T23:06:32.465952" elapsed="0.001001"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:32.465952" elapsed="0.001001"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-06T23:06:32.467952" level="INFO">Clicking button '(//div//button[@class='btn_primary btn_inventory'])[1]'.</msg>
+<arg>(${productAddToCart})[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T23:06:32.466953" elapsed="0.071007"/>
+</kw>
+<kw name="sleeptimer" owner="sleeptimer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-06T23:06:32.538961" level="INFO">Slept 0 seconds.</msg>
+<arg>0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-06T23:06:32.538961" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:32.537960" elapsed="0.002003"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-06T23:06:32.540963" level="INFO">Clicking button '(//div//button[@class='btn_primary btn_inventory'])[1]'.</msg>
+<arg>(${productAddToCart})[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T23:06:32.539963" elapsed="0.078728"/>
+</kw>
+<kw name="sleeptimer" owner="sleeptimer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-06T23:06:32.620691" level="INFO">Slept 0 seconds.</msg>
+<arg>0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-06T23:06:32.619692" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:32.618691" elapsed="0.002000"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:32.059657" elapsed="0.562033"/>
+</kw>
+<kw name="checkout selected items" owner="swaglabs_home_page">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-10-06T23:06:32.622694" level="INFO">Clicking link '//a[@href='./cart.html']'.</msg>
+<arg>${shoppingCartIcon}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T23:06:32.622694" elapsed="0.380427"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:32.621690" elapsed="0.381431"/>
+</kw>
+<kw name="sleeptimer" owner="sleeptimer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-06T23:06:33.006121" level="INFO">Slept 0 seconds.</msg>
+<arg>0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-06T23:06:33.005119" elapsed="0.001002"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:33.004118" elapsed="0.002003"/>
+</kw>
+<kw name="validate user is in your cart" owner="your_cart_page">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your Cart</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-10-06T23:06:33.011124" elapsed="0.038453"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:33.008126" elapsed="0.041451"/>
+</kw>
+<kw name="checkout all items" owner="your_cart_page">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${checkout}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-10-06T23:06:33.051688" elapsed="0.338698"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-10-06T23:06:33.391385" level="INFO">Clicking link '//a[@href='./checkout-step-one.html']'.</msg>
+<arg>${checkout}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T23:06:33.390386" elapsed="0.388511"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:33.050699" elapsed="0.728198"/>
+</kw>
+<kw name="sleeptimer" owner="sleeptimer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-06T23:06:33.782899" level="INFO">Slept 0 seconds.</msg>
+<arg>0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-06T23:06:33.781899" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:33.780897" elapsed="0.003003"/>
+</kw>
+<kw name="validate user is in Checkout Your Information" owner="checkout_your_information_page">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Checkout: Your Information</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-10-06T23:06:33.785897" elapsed="0.046515"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:33.784896" elapsed="0.048516"/>
+</kw>
+<kw name="provide user information" owner="checkout_your_information_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-06T23:06:33.835414" level="INFO">Typing text 'John' into text field '//input[@id="first-name"]'.</msg>
+<arg>${fname}</arg>
+<arg>${userFirstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T23:06:33.835414" elapsed="0.132489"/>
+</kw>
+<kw name="sleeptimer" owner="sleeptimer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-06T23:06:33.969903" level="INFO">Slept 0 seconds.</msg>
+<arg>0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-06T23:06:33.968904" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:33.968904" elapsed="0.000999"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-06T23:06:33.969903" level="INFO">Typing text 'Doe' into text field '//input[@id="last-name"]'.</msg>
+<arg>${lname}</arg>
+<arg>${userLastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T23:06:33.969903" elapsed="0.110815"/>
+</kw>
+<kw name="sleeptimer" owner="sleeptimer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-06T23:06:34.082717" level="INFO">Slept 0 seconds.</msg>
+<arg>0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-06T23:06:34.081717" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:34.081717" elapsed="0.001000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-06T23:06:34.083772" level="INFO">Typing text '1234' into text field '//input[@id="postal-code"]'.</msg>
+<arg>${postalCode}</arg>
+<arg>${userPostalCode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T23:06:34.083716" elapsed="0.108922"/>
+</kw>
+<kw name="sleeptimer" owner="sleeptimer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-06T23:06:34.194640" level="INFO">Slept 0 seconds.</msg>
+<arg>0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-06T23:06:34.194640" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:34.193637" elapsed="0.002002"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:33.834415" elapsed="0.361224"/>
+</kw>
+<kw name="click continue button" owner="checkout_your_information_page">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-06T23:06:34.197637" level="INFO">Clicking button '//input[@class='btn_primary cart_button']'.</msg>
+<arg>${continue}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T23:06:34.197637" elapsed="0.411153"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:34.196639" elapsed="0.413150"/>
+</kw>
+<kw name="validate user is in Checkout Overview" owner="checkout_overview_page">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Checkout: Overview</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-10-06T23:06:34.611791" elapsed="0.052825"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:34.610791" elapsed="0.054826"/>
+</kw>
+<kw name="finish transaction" owner="checkout_overview_page">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${finish}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-10-06T23:06:34.666615" elapsed="0.301374"/>
+</kw>
+<kw name="sleeptimer" owner="sleeptimer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-06T23:06:34.968988" level="INFO">Slept 0 seconds.</msg>
+<arg>0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-06T23:06:34.968988" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:34.968988" elapsed="0.000998"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-10-06T23:06:34.969986" level="INFO">Clicking link '//a[@href='./checkout-complete.html']'.</msg>
+<arg>${finish}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-06T23:06:34.969986" elapsed="0.614754"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:34.665617" elapsed="0.919123"/>
+</kw>
+<kw name="validate user is in your cart" owner="finish_page">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Finish</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-10-06T23:06:35.586741" elapsed="0.019996"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:35.585740" elapsed="0.022003"/>
+</kw>
+<kw name="validate transaction completed" owner="finish_page">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>THANK YOU FOR YOUR ORDER</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-10-06T23:06:35.610735" elapsed="0.023002"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:35.609736" elapsed="0.024001"/>
+</kw>
+<kw name="sleeptimer" owner="sleeptimer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-06T23:06:35.635741" level="INFO">Slept 0 seconds.</msg>
+<arg>0s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-06T23:06:35.635741" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:35.634738" elapsed="0.001003"/>
+</kw>
+<kw name="End web test" owner="browser">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-10-06T23:06:35.637739" elapsed="6.335890"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:35.636739" elapsed="6.336890"/>
+</kw>
+<status status="PASS" start="2024-10-06T23:06:28.875068" elapsed="13.099565"/>
+</test>
+<status status="PASS" start="2024-10-06T23:06:28.544497" elapsed="13.432134"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testing">Testing</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
