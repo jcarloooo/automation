@@ -59,7 +59,7 @@ Regression Login to checkout all items
     swaglabs_home_page.select all item and add to cart
     swaglabs_home_page.checkout selected items
     sleeptimer.sleeptimer
-    your_cart_page.validate user is in your cart
+    your_cart_page.validate user is in your cart 
     your_cart_page.checkout all items
     sleeptimer.sleeptimer
     checkout_your_information_page.validate user is in Checkout Your Information
