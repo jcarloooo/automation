@@ -29,8 +29,6 @@ Login to swaglabs homepage
     swaglabs_login_page.click login button
     sleeptimer.sleeptimer
     swaglabs_home_page.validate user is in homepage
-    
-
     sleeptimer.sleeptimer
     browser.End web test
 
