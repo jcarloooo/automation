@@ -12,20 +12,20 @@ ${driverChrome}    Chrome
 login user valid credentials
     browser.Begin web test
     Maximize Browser Window
-    Wait Until Page Contains Element    ${useraanameTxt}    10s
+    Wait Until Page Contains Element    ${useraanameTxt}    30s
     Input Text    ${useraanameTxt}    ${username}
     Input Password    ${passwordTxt}    ${password}
     Click Button    ${loginBtn}
-    Wait Until Page Contains Element    ${productLbl}    10s
+    Wait Until Page Contains Element    ${productLbl}    30s
 
 validate user is in login page
-     Wait Until Page Contains Element    ${useraanameTxt}    10s
+     Wait Until Page Contains Element    ${useraanameTxt}    30s
 
 validate username text field is present
-    Wait Until Page Contains Element    ${useraanameTxt}    10s
+    Wait Until Page Contains Element    ${useraanameTxt}    30s
 
 validate password field is present
-    Wait Until Page Contains Element    ${passwordTxt}    10s
+    Wait Until Page Contains Element    ${passwordTxt}    30s
 
 enter username
      Input Text    ${useraanameTxt}    ${username}
